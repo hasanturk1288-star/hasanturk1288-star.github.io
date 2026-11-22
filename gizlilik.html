@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gizlilik Politikası</title>
+<meta name="description" content="Tarih Notları (TYT • AYT • KPSS) uygulamasının gizlilik politikası.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:"Inter Yerel";src:url("fonts/inter-latin.woff2") format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter Yerel";src:url("fonts/inter-latin-ext.woff2") format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+2020,U+20A0-20AB,U+20AD-20C4}
+@font-face{font-family:"Bricolage Yerel";src:url("fonts/bricolage-latin.woff2") format("woff2");font-weight:200 800;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+2000-206F}
+@font-face{font-family:"Bricolage Yerel";src:url("fonts/bricolage-latin-ext.woff2") format("woff2");font-weight:200 800;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+1E00-1E9F}
+:root{--bg:#0B1324;--card:#141F38;--sunk:#0E1830;--line:#26355A;--text:#EEF2FA;--muted:#9AA7C7;--cyan:#2DD4BF;--gold:#F2C14E;--pink:#FF6B6B;
+  --fd:"Bricolage Yerel","Segoe UI",system-ui,sans-serif;--fb:"Inter Yerel","Segoe UI",system-ui,sans-serif;color-scheme:dark}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#F2F5FB;--card:#FFFFFF;--sunk:#EBF0F8;--line:#D8E0EE;--text:#121E36;--muted:#5A6783;--cyan:#0E9F8E;--gold:#B5841A;--pink:#E0484E;color-scheme:light}}
+:root[data-theme="light"]{--bg:#F2F5FB;--card:#FFFFFF;--sunk:#EBF0F8;--line:#D8E0EE;--text:#121E36;--muted:#5A6783;--cyan:#0E9F8E;--gold:#B5841A;--pink:#E0484E;color-scheme:light}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--text);font:16px/1.65 var(--fb);display:flex;justify-content:center}
+main{width:100%;max-width:720px;padding:calc(env(safe-area-inset-top) + 20px) max(16px,env(safe-area-inset-right)) calc(env(safe-area-inset-bottom) + 40px) max(16px,env(safe-area-inset-left))}
+a{color:var(--cyan)}
+.back{display:inline-block;margin-bottom:14px;font-weight:700;text-decoration:none}
+h1{font:800 clamp(1.6rem,6vw,2.1rem)/1.15 var(--fd);letter-spacing:-.02em;margin:0 0 6px;text-wrap:balance}
+.meta{color:var(--muted);font-size:.85rem;margin:0 0 20px}
+h2{font:800 1.15rem/1.3 var(--fd);margin:30px 0 8px;text-wrap:balance}
+p,li{text-wrap:pretty}
+ul{padding-left:20px;margin:8px 0} li{margin:6px 0}
+.tldr{background:var(--card);border:1px solid color-mix(in srgb,var(--cyan) 45%,var(--line));border-radius:18px;padding:14px 16px}
+.tldr ul{list-style:none;padding:0;margin:0}
+.tldr li{padding-left:28px;position:relative}
+.tldr li::before{content:"✓";position:absolute;left:4px;color:var(--cyan);font-weight:800}
+.tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0;display:block;overflow-x:auto}
+.tbl th,.tbl td{border-bottom:1px solid var(--line);padding:9px 8px;text-align:left;vertical-align:top}
+.tbl th{color:var(--muted);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase}
+.note{background:var(--sunk);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:12px;padding:12px 14px;font-size:.92rem}
+.foot{margin-top:34px;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">← Uygulamaya dön</a>
+  <h1>Gizlilik Politikası</h1>
+  <p class="meta">Tarih Notları: TYT • AYT • KPSS &nbsp;•&nbsp; Son güncelleme: 22 Kasım 2026</p>
+
+  <div class="tldr" role="note" aria-label="Kısaca">
+    <ul>
+      <li>Hesap açman gerekmez; adın, e-postan ya da telefon numaran istenmez.</li>
+      <li>Çalışma ilerlemen yalnızca <b>senin cihazında</b> saklanır; geliştiriciye ya da başka birine gönderilmez.</li>
+      <li>Reklam, analitik (kullanım takibi) ve çerez yoktur.</li>
+      <li>Uygulama, sen bir düğmeye basmadıkça internete veri göndermez.</li>
+    </ul>
+  </div>
+
+  <h2>1. Bu politika neyi kapsar?</h2>
+  <p>Bu politika, TYT, AYT ve KPSS Tarih sınavlarına hazırlık için geliştirilen <b>Tarih Notları</b> uygulamasının (web sayfası ve ana ekrana eklenen uygulama sürümü) hangi bilgileri nasıl kullandığını açıklar.</p>
+
+  <h2>2. Cihazında saklanan bilgiler</h2>
+  <p>Uygulamayı kullanırken oluşan bilgiler, tarayıcının kendi depolama alanında (localStorage) <b>yalnızca senin cihazında</b> tutulur:</p>
+  <table class="tbl">
+    <thead><tr><th>Bilgi</th><th>Ne için kullanılır?</th></tr></thead>
+    <tbody>
+      <tr><td>Adın (isteğe bağlı)</td><td>Ana sayfada sana adınla seslenmek için</td></tr>
+      <tr><td>Hedef sınavın ve sınav tarihin (isteğe bağlı)</td><td>Ünite ağırlıklarını ve geri sayımı göstermek için</td></tr>
+      <tr><td>Çözdüğün sorular, doğru-yanlış sayıları, deneme sonuçları, XP, rütbe ve rozetler</td><td>İlerlemeni, netini ve zayıf konularını göstermek için</td></tr>
+      <tr><td>Bilgi kartı tekrar zamanları, yanlış defteri, kaydettiğin sorular</td><td>Akıllı tekrar ve kişisel çalışma listeleri için</td></tr>
+      <tr><td>Bildirdiğin hatalı sorular</td><td>O soruları sana tekrar göstermemek ve istersen geliştiriciye iletebilmen için</td></tr>
+      <tr><td>Tema, yazı boyutu, ses ve günlük hedef ayarları</td><td>Uygulamayı tercihlerine göre göstermek için</td></tr>
+    </tbody>
+  </table>
+  <p>Bu bilgiler geliştiriciye <b>ulaşmaz</b>; geliştirici bunları göremez, kopyalayamaz ve kimseyle paylaşamaz. Uygulama, internetsiz çalışabilmek için kendi dosyalarını da cihazının önbelleğine kaydeder; bu dosyalarda kişisel bilgi bulunmaz.</p>
+
+  <h2>3. Cihazından ancak senin isteğinle çıkan bilgiler</h2>
+  <p>Aşağıdaki durumların hepsi, senin bir düğmeye basmanla başlar. Hiçbiri arka planda kendiliğinden çalışmaz.</p>
+  <ul>
+    <li><b>🤖 Yapay Zekâ Hoca:</b> Bu özellik yalnızca uygulama <b>claude.ai</b> üzerinden açıldığında görünür ve senin kendi Claude hesabınla çalışır (Anthropic PBC tarafından sunulur). Hoca'ya bir şey sorduğunda; yazdığın mesaj, ilgili soru ve şıkları, seçtiğin cevap, ünite notları ve (ana sayfadaki Hoca'da) özet çalışma durumun (hedef sınav, sınava kalan gün, çözülen soru sayısı, doğruluk oranı, yanlış defterindeki soru sayısı, okunan ünite sayısı, seri ve en zayıf ünite) yanıt üretmek için Anthropic'e gönderilir. <b>Adın gönderilmez.</b> Bu veriler Anthropic'in <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">gizlilik politikasına</a> tabidir. İlk kullanımda claude.ai senden izin ister; izin vermezsen özellik kapalı kalır ve uygulamanın geri kalanı aynen çalışır.</li>
+    <li><b>🔊 Sesli dinleme:</b> Notları cihazının kendi ses motoru okur. Bazı tarayıcılar ya da işletim sistemleri, okunacak metni seslendirmek için kendi çevrim içi ses hizmetlerine gönderebilir; bu, uygulamanın değil tarayıcının/sistemin tercihidir.</li>
+    <li><b>📤 Soru bildirimi gönderme:</b> Ayarlar'da "Gönder"e bastığında bildirdiğin soruların metni telefonunun Paylaş menüsüyle açılır. Nereye (WhatsApp, e-posta vb.) ve kime gönderileceğini sen seçersin.</li>
+    <li><b>💾 Yedekleme:</b> "Yedeği kopyala" ilerlemeni metin olarak panoya kopyalar. Bu metni nereye yapıştıracağın sana kalmıştır; yedek metninde adın ve sınav tarihin de bulunabilir.</li>
+  </ul>
+
+  <h2>4. Reklam, analitik ve çerezler</h2>
+  <p>Uygulamada reklam yoktur. Kullanımını izleyen analitik ya da takip araçları ve çerezler kullanılmaz. Uygulama dış sunuculardan yazı tipi, betik veya görsel yüklemez; gerekli her şey uygulamanın içinde gelir.</p>
+  <div class="note">Uygulamayı <b>claude.ai</b> üzerinden açtığında sayfa claude.ai tarafından barındırılır. Bu durumda claude.ai'nin kendi hesap, güvenlik ve kullanım kayıtları Anthropic'in gizlilik politikasına tabidir; bu politika yalnızca uygulamanın kendisinin ne yaptığını anlatır.</div>
+
+  <h2>5. Çocukların gizliliği</h2>
+  <p>Uygulama lise ve üniversite öğrencileri ile KPSS'ye hazırlanan yetişkinler için tasarlanmıştır. Uygulama kimseden kişisel bilgi toplamaz; adını yazmak isteğe bağlıdır ve yalnızca cihazda kalır. Yapay Zekâ Hoca'yı kullanmak için claude.ai hesabı gerekir ve bu hesabın yaş koşulları Anthropic tarafından belirlenir.</p>
+
+  <h2>6. Verilerini silme ve taşıma</h2>
+  <ul>
+    <li><b>Hepsini silmek için:</b> Gelişim → Ayarlar → "Tüm ilerlemeyi sıfırla". Tarayıcının site verilerini temizlemek ya da uygulamayı kaldırmak da tüm bilgileri siler.</li>
+    <li><b>Başka cihaza taşımak için:</b> Ayarlar → "Yedeği kopyala", yeni cihazda "Yedekten geri yükle".</li>
+  </ul>
+  <p>Bilgilerin yalnızca cihazında durduğu için geliştiricinin senin adına silebileceği, düzeltebileceği ya da sana gönderebileceği bir kayıt yoktur. Silme ve taşıma tamamen senin kontrolündedir.</p>
+
+  <h2>7. Güvenlik</h2>
+  <p>Bilgiler cihazının tarayıcı depolamasında şifrelenmeden tutulur. Cihazını başkalarıyla paylaşıyorsan onlar da uygulamadaki ilerlemeni görebilir. Telefonun kaybolursa ya da değişirse ilerlemen kaybolabilir; bu yüzden ara sıra yedek almanı öneririz.</p>
+
+  <h2>8. Kişisel Verilerin Korunması Kanunu (KVKK)</h2>
+  <p>Uygulama, geliştiriciye herhangi bir kişisel veri aktarmaz ve geliştirici tarafından kişisel veri işlenmez. Yapay Zekâ Hoca kullanıldığında gönderilen veriler, kullanıcının kendi Claude hesabı üzerinden Anthropic tarafından işlenir. Bu konudaki soruların için aşağıdaki iletişim adresini kullanabilirsin.</p>
+
+  <h2>9. Değişiklikler</h2>
+  <p>Uygulamaya veri kullanımını değiştiren yeni bir özellik eklenirse bu sayfa güncellenir ve en üstteki "Son güncelleme" tarihi değişir.</p>
+
+  <h2>10. İletişim</h2>
+  <p>Geliştirici: <b>Hasan</b><br>E-posta: <a href="mailto:deusmanus007@gmail.com"><b>deusmanus007@gmail.com</b></a></p>
+
+  <p class="foot">Tarih Notları • TYT • AYT • KPSS</p>
+</main>
+<script>
+// Uygulamada seçilen tema (Koyu / Açık) bu sayfada da geçerli olsun
+try { const t = (JSON.parse(localStorage.getItem("kpss_tarih_v2")) || {}).theme; if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</body>
+</html>
